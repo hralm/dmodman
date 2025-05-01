@@ -36,7 +36,14 @@ messages. On the top is a bar with keybindings.](/screenshot.png)
 * `xdg-utils` to `xdg-open` mod pages in the browser.
 
 ## Building
-* dmodman works with the latest stable Rust toolchain.
+dmodman works with the latest stable Rust toolchain:
+* `git clone https://github.com/dandels/dmodman/`
+* `cd dmodman`
+* `cargo build --release` or `cargo run --release`
+
+## Example: How to Build using Fedora/Nobara
+* `sudo dnf install git cargo libarchive-devel rust-clang-sys+default-devel`
+    * With this package list, the system add the rest of the dependencies required.
 * `git clone https://github.com/dandels/dmodman/`
 * `cd dmodman`
 * `cargo build --release` or `cargo run --release`
